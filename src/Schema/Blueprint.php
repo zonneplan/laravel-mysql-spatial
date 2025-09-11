@@ -14,7 +14,7 @@ class Blueprint extends IlluminateBlueprint
      *
      * @return \Illuminate\Support\Fluent
      */
-    public function geometry($column, $srid = null)
+    public function geometry($column, $srid = 0)
     {
         return $this->addColumn('geometry', $column, compact('srid'));
     }
@@ -27,7 +27,7 @@ class Blueprint extends IlluminateBlueprint
      *
      * @return \Illuminate\Support\Fluent
      */
-    public function point($column, $srid = null)
+    public function point($column, $srid = 0)
     {
         return $this->addColumn('point', $column, compact('srid'));
     }
@@ -40,7 +40,7 @@ class Blueprint extends IlluminateBlueprint
      *
      * @return \Illuminate\Support\Fluent
      */
-    public function lineString($column, $srid = null)
+    public function lineString($column, $srid = 0)
     {
         return $this->addColumn('linestring', $column, compact('srid'));
     }
@@ -53,7 +53,7 @@ class Blueprint extends IlluminateBlueprint
      *
      * @return \Illuminate\Support\Fluent
      */
-    public function polygon($column, $srid = null)
+    public function polygon($column, $srid = 0)
     {
         return $this->addColumn('polygon', $column, compact('srid'));
     }
@@ -66,7 +66,7 @@ class Blueprint extends IlluminateBlueprint
      *
      * @return \Illuminate\Support\Fluent
      */
-    public function multiPoint($column, $srid = null)
+    public function multiPoint($column, $srid = 0)
     {
         return $this->addColumn('multipoint', $column, compact('srid'));
     }
@@ -79,7 +79,7 @@ class Blueprint extends IlluminateBlueprint
      *
      * @return \Illuminate\Support\Fluent
      */
-    public function multiLineString($column, $srid = null)
+    public function multiLineString($column, $srid = 0)
     {
         return $this->addColumn('multilinestring', $column, compact('srid'));
     }
@@ -92,7 +92,7 @@ class Blueprint extends IlluminateBlueprint
      *
      * @return \Illuminate\Support\Fluent
      */
-    public function multiPolygon($column, $srid = null)
+    public function multiPolygon($column, $srid = 0)
     {
         return $this->addColumn('multipolygon', $column, compact('srid'));
     }
@@ -105,7 +105,7 @@ class Blueprint extends IlluminateBlueprint
      *
      * @return \Illuminate\Support\Fluent
      */
-    public function geometryCollection($column, $srid = null)
+    public function geometryCollection($column, $srid = 0)
     {
         return $this->addColumn('geometrycollection', $column, compact('srid'));
     }
